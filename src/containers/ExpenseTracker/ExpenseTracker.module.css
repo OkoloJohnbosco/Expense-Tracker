@@ -1,0 +1,7 @@
+.Wrapper {
+  font-family: Calibri;
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 10px 30px;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+}

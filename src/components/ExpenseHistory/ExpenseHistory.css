@@ -1,0 +1,29 @@
+div.text-left {
+  margin-bottom: 20px;
+}
+.display-history {
+  padding: 10px;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  border-right: 5px solid transparent;
+  animation: fadeIn 0.4s linear forwards;
+}
+.display-history.red {
+  border-color: #dc3545;
+}
+.display-history.green {
+  border-color: #28a745;
+}
+@keyframes fadeIn {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

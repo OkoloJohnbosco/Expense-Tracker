@@ -1,0 +1,12 @@
+.card-expense {
+  flex-direction: row;
+  justify-content: space-around;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.06);
+  margin: 40px auto;
+}
+.middle {
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+}
+.card-expense p {
+  margin-bottom: 0;
+}

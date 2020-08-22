@@ -1,0 +1,1 @@
+export const SUBMIT_RESULT = "SUBMIT_RESULT";
