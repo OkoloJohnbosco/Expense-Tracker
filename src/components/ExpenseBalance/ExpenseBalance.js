@@ -4,7 +4,7 @@ import { numberfy, makePositive } from "../../utility/index";
 function ExpenseBalance({ balance }) {
   let mainBal = numberfy(balance);
   let balClass = mainBal > 0 ? "text-success" : "text-danger";
-  if (mainBal === 0) balClass = "text-dark";
+  if (mainBal === 0) balClass = "text-primary";
   let shownBal = mainBal < 0 ? makePositive(mainBal) : mainBal;
 
   return (
@@ -12,7 +12,7 @@ function ExpenseBalance({ balance }) {
       <h5>
         <strong>Your Balance</strong>
       </h5>
-      <h4 className={balClass}>${shownBal}</h4>
+      <h4 className={balClass}>${shownBal.toFixed(2)}</h4>
     </div>
   );
 }

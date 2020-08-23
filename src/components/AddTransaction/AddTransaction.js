@@ -11,7 +11,7 @@ function AddTransaction({
 }) {
   return (
     <div className="text-left">
-      <h5>Add nex transaction</h5>
+      <h5>Add new transaction</h5>
       <hr className="mb-4" />
       <div className="form-group">
         <label className="text-mute">Text</label>
@@ -25,7 +25,7 @@ function AddTransaction({
       </div>
       <div className="form-group">
         <label>Amount</label>
-        <p>(negative - expense, positive + income)</p>
+        <p>(negative - expense eg(-50), positive + income, eg(+50))</p>
         <input
           type="text"
           required
