@@ -27,7 +27,7 @@ function ExpenseTracker({ inc, exp, history, onSubmitResult }) {
           priceChange={(e) => setPrice(e.target.value)}
           submitResult={() => {
             onSubmitResult(price, item);
-            setPrice(0);
+            setPrice("");
             setItem("");
           }}
           disable={!validate(item, price)}
