@@ -10,9 +10,9 @@ import reducer from "./store/reducer/reducer";
 const logger = (store) => {
   return (next) => {
     return (action) => {
-      console.log("[MiddleWare]", action);
+      // console.log("[MiddleWare]", action);
       const result = next(action);
-      console.log("[Middleware] next state", store.getState());
+      // console.log("[Middleware] next state", store.getState());
       return result;
     };
   };

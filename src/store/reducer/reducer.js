@@ -10,8 +10,8 @@ const initialState = {
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case actionTypes.SUBMIT_RESULT:
-      console.log(action.value);
-      console.log(action.result);
+      // console.log(action.value);
+      // console.log(action.result);
       return {
         ...state,
         income: isPositive(action.value)
